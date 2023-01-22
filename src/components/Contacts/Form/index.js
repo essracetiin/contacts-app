@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../styles.css";
 
 const initialFormValues = { fullname: "", phone_number: "" };
 export default function Form({ addContact, contacts }) {
@@ -35,7 +36,7 @@ export default function Form({ addContact, contacts }) {
           onChange={onChangeInput}
         />
       </div>
-      <div>
+      <div className="btn">
         <button>Add</button>
       </div>
     </form>
